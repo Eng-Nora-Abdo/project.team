@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create New Password</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+</head>
+<body>
+
+  
+    <nav class="nav_bar">
+
+        <div class="left_nav_side">
+
+            <ul class="left_nav_side_list">
+                <li><a href="http://" target="_blank" rel="noopener noreferrer"><img src="./assets/images/logo.png"
+                            width="80px" height="80px" alt="logo">
+                    </a></li>
+                <li><a href="drive.html" target="_blank" rel="noopener noreferrer">Drive</a></li>
+                <li> <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                <li> <a href="about.html" target="_blank" rel="noopener noreferrer">About</a> </li>
+                <li><a href="help.html" target="_blank" rel="noopener noreferrer">Help</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="right_nav_side">
+            <ul class="right_nav_side_list">
+                <li><a href="login.html" target="_blank" rel="noopener noreferrer">Login</a></li>
+                <li><a href="sign_up.html" target="_blank" rel="noopener noreferrer">Sign up</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+<div class="login-container">
+  <h2>Create New Password</h2>
+
+  <form id="resetForm">
+    <div class="form-group">
+      <label>New Password</label>
+      <input type="password" id="newPassword" required>
+    </div>
+
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <input type="password" id="confirmPassword" required>
+    </div>
+
+    <button type="submit" class="login-btn">Save Password</button>
+
+    <div id="message"></div>
+  </form>
+</div>
+
+
+
+
+<script>
+  const form = document.getElementById("resetForm");
+  const message = document.getElementById("message");
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const newPass = document.getElementById("newPassword").value;
+    const confirmPass = document.getElementById("confirmPassword").value;
+
+    if(newPass !== confirmPass){
+      message.style.color = "red";
+      message.textContent = "Passwords do not match!";
+      return;
+    }
+
+    console.log("New Password:", newPass);
+
+    message.style.color = "green";
+    message.textContent = "Password updated successfully!";
+
+    setTimeout(()=>{
+      window.location.href = "login.html";
+    },1500);
+  });
+</script>
+
+</body>
+</html>

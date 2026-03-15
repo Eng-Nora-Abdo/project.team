@@ -1,0 +1,124 @@
+
+.nav_bar{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    
+   
+}
+
+.left_nav_side_list li a,
+.right_nav_side_list li a{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    display: flex;
+    column-gap: 5px;
+    transition: 0.5s ease;
+}
+
+.left_nav_side_list,
+.right_nav_side_list {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+.left_nav_side_list img{
+    border-radius: 50%;
+}
+
+.left_nav_side_list li a:hover,
+.right_nav_side_list li a:hover {
+    color: #07bac6;
+    text-decoration: underline;
+}
+.login-container{
+  height: 300px;
+  margin-bottom: 300px;
+}
+.footer {
+  background: linear-gradient(135deg, #111, #222);
+  color: #fff;
+  padding: 60px 20px 40px 20px;
+  font-family: 'Arial', sans-serif;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 80px; 
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.link-column h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.link-column p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.link-column a {
+  display: flex;
+  align-items: center;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 15px;
+}
+
+.link-column a i {
+  margin-right: 10px;
+  color: #07bac6;
+  transition: transform 0.3s;
+}
+
+.link-column a:hover i {
+  transform: translateX(4px);
+}
+
+.link-column a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background:#07bac6 ;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.link-column a:hover {
+  color: #fff;
+}
+
+.link-column a:hover::after {
+  width: 100%;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 30px;
+}
+
+.footer-bottom hr {
+  border: 0.5px solid #333;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/forgot_pass.css">
+</head>
+<body>
+
+<nav class="nav_bar">
+
+        <div class="left_nav_side">
+
+            <ul class="left_nav_side_list">
+                <li><a href="http://" target="_blank" rel="noopener noreferrer"><img src="./assets/images/logo.png"
+                            width="80px" height="80px" alt="logo">
+                    </a></li>
+                <li><a href="drive.html" target="_blank" rel="noopener noreferrer">Drive</a></li>
+                <li> <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                <li> <a href="about.html" target="_blank" rel="noopener noreferrer">About</a> </li>
+                <li><a href="help.html" target="_blank" rel="noopener noreferrer">Help</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="right_nav_side">
+            <ul class="right_nav_side_list">
+                <li><a href="login.html" target="_blank" rel="noopener noreferrer">Login</a></li>
+                <li><a href="sign_up.html" target="_blank" rel="noopener noreferrer">Sign up</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+
+
+<div class="login-container">
+  <h2>Reset Password</h2>
+
+  <form id="forgotForm">
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" id="resetEmail" required>
+    </div>
+
+    <button type="submit" class="login-btn">Send Reset Link</button>
+
+    <div id="message"></div>
+  </form>
+</div>
+
+
+<footer class="footer">
+  <div class="footer-links">
+    <div class="link-column">
+      <h4>Company</h4>
+      <p>We provide innovative solutions for your business.</p>
+      <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+
+    <div class="link-column">
+      <h4>Products</h4>
+      <a href="#"><i class="fas fa-star"></i> Features</a>
+      <a href="#"><i class="fas fa-tags"></i> Pricing</a>
+      <a href="#"><i class="fas fa-plug"></i> Integrations</a>
+    </div>
+
+    <div class="link-column">
+      <h4>Support</h4>
+      <a href="#"><i class="fas fa-life-ring"></i> Help Center</a>
+      <a href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+      <a href="#"><i class="fas fa-user-secret"></i> Privacy Policy</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <hr>
+    <p>© 2026 RideHub. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script>
+  const form = document.getElementById("forgotForm");
+  const message = document.getElementById("message");
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const email = document.getElementById("resetEmail").value;
+
+    console.log("Reset requested for:", email);
+
+    message.style.color = "green";
+    message.textContent = "Reset link sent successfully!";
+
+    setTimeout(()=>{
+      window.location.href = "reset.html";
+    },1500);
+  });
+</script>
+
+</body>
+</html>

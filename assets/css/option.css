@@ -1,0 +1,292 @@
+body{
+ 
+ font-family: sans-serif;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.navbar{
+    background:#000;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 50px;
+}
+
+.logo{
+    color:#fff;
+    font-size:22px;
+    font-weight:600;
+}
+
+span{
+   color: #07bac6;
+}
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#07bac6;
+}
+
+
+.title h1{
+ font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+ font-size: 30px;
+ font-weight: 700; 
+ padding: 40px 185px;
+}
+.container{
+
+ width: 80%;
+ margin: auto;
+ display: flex;
+ 
+ justify-content:space-around;
+ align-items: center;
+ 
+ border-radius: 20px; 
+ /* box-shadow: 0 4px 8px 8px rgb(218, 230, 230); */
+ box-shadow: 0 0 8px rgb(218, 230, 230);
+ transition: transform 0.3s, box-shadow 0.3s; 
+ margin-bottom: 20px;
+ 
+
+}
+
+
+.uber-text{
+
+ width: 50%;
+ padding: 20px;
+ line-height: 24px;
+ color:rgb(50 50 50 / 98%);
+ 
+ 
+}
+.uber-img img{
+ width:90%;
+ 
+}
+
+
+.option-btn{
+ padding:12px 20px;
+ background:black;
+ color:white;
+ border:none;
+ cursor:pointer;
+ display: block;
+ margin: auto;
+}
+.option-btn a{
+ text-decoration: none;
+ color: hashtag#ffffff;
+}
+.option-btn:hover{
+ background-color:rgb(58, 227, 231) ;
+ a{
+ color: black;
+ }
+}
+
+iframe{
+ border-radius: 12px;
+ overflow: hidden; 
+ box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+ padding: 10px;
+ 
+}
+ 
+/* */
+
+
+body {
+ background: hashtag#f6f6f6;
+}
+
+
+
+.card {
+ background: hashtag#fff;
+ width: 360px;
+ padding: 25px;
+ border-radius: 14px;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+ margin-bottom: 20px;
+ font-size: 20px;
+}
+
+.input-box {
+ position: relative;
+ display: flex;
+ align-items: center;
+ background: hashtag#f1f1f1;
+ padding: 14px 16px;
+ border-radius: 10px;
+ margin-bottom: 12px;
+}
+
+.input-box input,
+.input-box select {
+ border: none;
+ background: transparent;
+ outline: none;
+ width: 50%;
+ font-size: 14px;
+ appearance: none;
+ 
+}
+
+.mini-select {
+ position: relative;
+ display: inline-flex;
+ align-items: center;
+ background: hashtag#f1f1f1;
+ padding: 10px 14px;
+ border-radius: 20px;
+ margin-bottom: 20px;
+}
+
+.mini-select select {
+ border: none;
+ background: transparent;
+ outline: none;
+ appearance: none;
+ font-size: 14px;
+ padding-right: 18px;
+}
+
+
+
+
+
+
+.option-booking{
+
+ 
+ display: flex;
+ justify-content: space-around;
+ align-items: flex-start;
+ 
+
+
+ 
+}
+
+
+
+.search-btn {
+ width: 100%;
+ padding: 14px;
+ background: black;
+ color: white;
+ border: none;
+ border-radius: 10px;
+ font-size: 15px;
+ cursor: pointer;
+ transition: 0.3s;
+}
+.search-btn:hover{
+ background-color:rgb(58, 227, 231) ;
+ color: black;
+}
+
+.search-btn:hover {
+ opacity: 0.9;
+}
+
+
+.footer {
+  background: linear-gradient(135deg, #111, #222);
+  color: #fff;
+  padding: 60px 20px 40px 20px;
+  font-family: 'Arial', sans-serif;
+  width: 100%; /* Full width */
+  box-sizing: border-box;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* المسافة بين الأعمدة */
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.link-column h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.link-column p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.link-column a {
+  display: flex;
+  align-items: center;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 15px;
+}
+
+.link-column a i {
+  margin-right: 10px;
+  color: #07bac6;
+  transition: transform 0.3s;
+}
+
+.link-column a:hover i {
+  transform: translateX(4px);
+}
+
+.link-column a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background:#07bac6 ;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.link-column a:hover {
+  color: #fff;
+}
+
+.link-column a:hover::after {
+  width: 100%;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 30px;
+}
+
+.footer-bottom hr {
+  border: 0.5px solid #333;
+  margin-bottom: 15px;
+}
+
